@@ -7,7 +7,7 @@ def get_exif_data(image_path):
     exif_data = {}
 
     if not exif_data_raw:
-        print("Keine EXIF-Daten gefunden.")
+        print("No EXIF-data found.")
         return exif_data
 
     for tag_id, value in exif_data_raw.items():
